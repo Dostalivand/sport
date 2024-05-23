@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم حضور و غیاب کیوکوشین اویاما</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>سیستم حضور و غیاب کیوکوشین اویاما</h1>
+        <form id="addPersonForm">
+            <input type="text" id="personName" placeholder="نام فرد" required>
+            <input type="text" id="personWeight" placeholder="وزن فرد" required>
+            <input type="text" id="personBirthYear" placeholder="سال تولد" required>
+            <input type="text" id="personBeltColor" placeholder="رنگ کمربند" required>
+            <input type="date" id="personRegistrationDate" placeholder="تاریخ ثبت نام" required>
+            <input type="file" id="personImage" accept="image/*" required>
+            <button type="submit">افزودن</button>
+        </form>
+        <ul id="peopleList"></ul>
+        <div id="calendarContainer">
+            <div id="calendar"></div>
+        </div>
+        <button id="calculateAttendance">محاسبه حضور و غیاب خرداد ماه 1403</button>
+        <div id="results"></div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>
